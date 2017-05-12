@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>scroll-physics</title>
+  <link rel="stylesheet" type="text/css" href="physics.css">
+  <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+<section class="wrapper">
+  <div class="item scroll-physics"></div>
+  <div class="item scroll-physics"></div>
+  <div class="item scroll-physics"></div>
+  <div class="item scroll-physics"></div>
+  <div class="item scroll-physics"></div>
+  <div class="item scroll-physics"></div>
+  <div class="item scroll-physics"></div>
+  <div class="item scroll-physics"></div>
+</section>
+
+<script type="text/javascript" src="headroom.js"></script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var bodyHeadroom = headroom(document.body)
+        addEventListener('scroll', bodyHeadroom)
+        addEventListener('load', bodyHeadroom)
+  })
+</script>
+</body>
+</html>

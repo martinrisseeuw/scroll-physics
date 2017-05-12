@@ -1,0 +1,16 @@
+body .scroll-physics {
+  transition: transform 1.2s ease-in;
+}
+
+body[data-speed="none"] .scroll-physics,
+body.scroll-top .scroll-physics{
+  transform: none !important;
+}
+
+body.scroll-down .scroll-physics {
+  transform: translateY(-2.4em);
+}
+
+body.scroll-up .scroll-physics {
+  transform: translateY(2.4em);
+}
